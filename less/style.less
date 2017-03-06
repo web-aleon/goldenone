@@ -34,14 +34,38 @@ p{
 	font-family: 'Damion', cursive;
 	color: @mainColor;
 }
-section, div{
-	.flex
+section, div, header{
+	.flex;
+	width: 100%;
+	justify-content: center;
 }
 .container{
 	width: 970px;
+	padding: 0 15px;
 }
 .rel{
 	position: relative;
+}
+h2{
+	font-size: 40px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 19px;
+}
+h3{
+	font-size: 18px;
+	line-height: 18px;
+}
+.titledesc{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 17px;
+}
+p{
+	font-size: 14px;
+	line-height: 22px;
 }
 a{
 	text-decoration: none;
@@ -51,9 +75,6 @@ a{
 //HEADER
 header{
 	position: absolute;
-	width: 100%;
-	.flex;
-	justify-content: center;
 
 	nav{
 		width: 100%;
@@ -126,4 +147,79 @@ header{
 		color: #fff;
 	}
 
+}
+
+// SERVICES
+#services{
+	padding-top: 120px;
+	padding-bottom: 118px;
+	.container{
+		flex-direction: column;
+		text-align: center;
+	}
+	.services_items{
+		justify-content: space-between;
+		margin-top: 77px;
+		flex-wrap: wrap;
+	}	
+	.services_item{
+		flex-direction: column;
+		align-items: center;
+		width: 290px;
+
+		.img_box{
+			width: 72px;
+			height: 72px;
+			border: 3px solid @mainColor;
+			border-radius: 50%;
+			align-items: center;
+
+		}
+		
+		h3{
+			margin-top: 25px;
+			margin-bottom: 12px;
+		}
+		p{
+			margin: 0;
+			
+		}
+	}	
+}
+
+// PORTFOLIO
+#portfolio{
+	padding: 120px 0 70px;
+	background: #f7f7f7;
+
+	.container{
+		flex-direction: column;
+		text-align: center;
+	}
+	.portfolio_items{
+		justify-content: space-between;
+		margin-top: 76px;
+		flex-wrap: wrap;
+	}
+	.portfolio_item{
+		width: 290px;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+		
+		.text-block{
+			flex-direction: column;
+			background: #fff;
+		}
+		h3{
+			margin-top: 29px;
+			margin-bottom: 4px;
+		}
+		.desc{
+			margin-top: 0;
+			margin-bottom: 27px;
+			line-height: 15px;
+		}
+	}
+	
 }

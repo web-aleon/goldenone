@@ -30,18 +30,43 @@ p {
   color: #fed136;
 }
 section,
-div {
+div,
+header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .container {
   width: 970px;
+  padding: 0 15px;
 }
 .rel {
   position: relative;
+}
+h2 {
+  font-size: 40px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.titledesc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 17px;
+}
+p {
+  font-size: 14px;
+  line-height: 22px;
 }
 a {
   text-decoration: none;
@@ -49,13 +74,6 @@ a {
 }
 header {
   position: absolute;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
 }
 header nav {
   width: 100%;
@@ -132,4 +150,68 @@ header nav ul li a {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+}
+#services {
+  padding-top: 120px;
+  padding-bottom: 118px;
+}
+#services .container {
+  flex-direction: column;
+  text-align: center;
+}
+#services .services_items {
+  justify-content: space-between;
+  margin-top: 77px;
+  flex-wrap: wrap;
+}
+#services .services_item {
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+}
+#services .services_item .img_box {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  align-items: center;
+}
+#services .services_item h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+#services .services_item p {
+  margin: 0;
+}
+#portfolio {
+  padding: 120px 0 70px;
+  background: #f7f7f7;
+}
+#portfolio .container {
+  flex-direction: column;
+  text-align: center;
+}
+#portfolio .portfolio_items {
+  justify-content: space-between;
+  margin-top: 76px;
+  flex-wrap: wrap;
+}
+#portfolio .portfolio_item {
+  width: 290px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#portfolio .portfolio_item .text-block {
+  flex-direction: column;
+  background: #fff;
+}
+#portfolio .portfolio_item h3 {
+  margin-top: 29px;
+  margin-bottom: 4px;
+}
+#portfolio .portfolio_item .desc {
+  margin-top: 0;
+  margin-bottom: 27px;
+  line-height: 15px;
 }
