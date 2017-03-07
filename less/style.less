@@ -42,6 +42,8 @@ section, div, header{
 .container{
 	width: 970px;
 	padding: 0 15px;
+	flex-direction: column;
+	text-align: center;
 }
 .rel{
 	position: relative;
@@ -114,8 +116,6 @@ header{
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	padding-top: 277px;
-	padding-bottom: 160px;
 	background: url('../img/headerbg.jpg') no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -153,10 +153,6 @@ header{
 #services{
 	padding-top: 120px;
 	padding-bottom: 118px;
-	.container{
-		flex-direction: column;
-		text-align: center;
-	}
 	.services_items{
 		justify-content: space-between;
 		margin-top: 77px;
@@ -192,10 +188,6 @@ header{
 	padding: 120px 0 70px;
 	background: #f7f7f7;
 
-	.container{
-		flex-direction: column;
-		text-align: center;
-	}
 	.portfolio_items{
 		justify-content: space-between;
 		margin-top: 76px;
@@ -222,4 +214,77 @@ header{
 		}
 	}
 	
+}
+
+// ABOUT
+#about{
+	padding: 120px 0;
+
+	.about_items{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 84px;
+
+		.about_item{
+			align-items: flex-start;
+			justify-content: space-around;
+			
+			.text-block{
+				flex-direction: column;
+
+			}
+		}
+		.about_item.odd{
+			text-align: right;
+		}
+		.about_item.even{
+			text-align: left;
+			flex-direction: row-reverse;
+		}
+		p{
+			margin: 0;
+		}
+		.date{
+			font-family: @montserrat;
+			color: @headingColor;
+			font-size: 18px;
+			line-height: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		h3{
+			margin-top: 7px;
+			margin-bottom: 14px;
+		}
+		.image{
+			flex-direction: column;
+			align-items: center;
+		}
+		img, .about_more{
+			border: 7px solid #f1f1f1;
+			border-radius: 50%;
+		}
+		.connector{
+			width: 2px;
+			height: 93px;
+			background-color: #f1f1f1;
+		}
+		.about_more{
+			width: 182px;
+			height: 182px;
+			box-sizing: border-box;
+			background: @mainColor;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: @montserrat;
+			font-weight: 700;
+			color: #fff;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+			font-size: 18px;
+			line-height: 26px;
+			text-transform: uppercase;
+		}
+	}
 }

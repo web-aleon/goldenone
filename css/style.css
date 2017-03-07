@@ -43,6 +43,8 @@ header {
 .container {
   width: 970px;
   padding: 0 15px;
+  flex-direction: column;
+  text-align: center;
 }
 .rel {
   position: relative;
@@ -120,8 +122,6 @@ header nav ul li a {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-top: 277px;
-  padding-bottom: 160px;
   background: url('../img/headerbg.jpg') no-repeat;
   background-position: top center;
   background-size: cover;
@@ -155,10 +155,6 @@ header nav ul li a {
   padding-top: 120px;
   padding-bottom: 118px;
 }
-#services .container {
-  flex-direction: column;
-  text-align: center;
-}
 #services .services_items {
   justify-content: space-between;
   margin-top: 77px;
@@ -187,10 +183,6 @@ header nav ul li a {
   padding: 120px 0 70px;
   background: #f7f7f7;
 }
-#portfolio .container {
-  flex-direction: column;
-  text-align: center;
-}
 #portfolio .portfolio_items {
   justify-content: space-between;
   margin-top: 76px;
@@ -214,4 +206,72 @@ header nav ul li a {
   margin-top: 0;
   margin-bottom: 27px;
   line-height: 15px;
+}
+#about {
+  padding: 120px 0;
+}
+#about .about_items {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 84px;
+}
+#about .about_items .about_item {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#about .about_items .about_item .text-block {
+  flex-direction: column;
+}
+#about .about_items .about_item.odd {
+  text-align: right;
+}
+#about .about_items .about_item.even {
+  text-align: left;
+  flex-direction: row-reverse;
+}
+#about .about_items p {
+  margin: 0;
+}
+#about .about_items .date {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#about .about_items h3 {
+  margin-top: 7px;
+  margin-bottom: 14px;
+}
+#about .about_items .image {
+  flex-direction: column;
+  align-items: center;
+}
+#about .about_items img,
+#about .about_items .about_more {
+  border: 7px solid #f1f1f1;
+  border-radius: 50%;
+}
+#about .about_items .connector {
+  width: 2px;
+  height: 93px;
+  background-color: #f1f1f1;
+}
+#about .about_items .about_more {
+  width: 182px;
+  height: 182px;
+  box-sizing: border-box;
+  background: #fed136;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
