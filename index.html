@@ -9,7 +9,8 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Damion|Droid+Serif:400i|Montserrat:400,700|Roboto+Slab" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,7 +25,8 @@
       <div class="container">
         <nav>
           <a href="/" class="logo">Golden</a>
-          <ul>
+          <i id="mobilemenu" class="fa fa-bars"></i>
+          <ul class="" id="headermenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -177,7 +179,81 @@
         </div>
       </div>
     </section>
-    
+    <section id="team">
+      <div class="container">
+        <h2>our amazing team</h2>
+        <p class="desc titledesc">Proin iaculis purus consequat sem cure.</p>
+        <div class="team_items">
+          <div class="team_item">
+            <div class="image"><img src="img/team1.jpg" alt=""></div>
+            <h3>Kimberly Thompson</h3>
+            <p class="">Marketer</p>
+            <div class="team_social">
+              <a href="#" class="team_social-fb"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team_social-tw"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="team_social-pint"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="team_item">
+            <div class="image"><img src="img/team2.jpg" alt=""></div>
+            <h3>Rico Massimo</h3>
+            <p class="">Coder</p>
+            <div class="team_social">
+              <a href="#" class="team_social-fb"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team_social-tw"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="team_social-pint"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="team_item">
+            <div class="image"><img src="img/team3.jpg" alt=""></div>
+            <h3>Uku Mason</h3>
+            <p class="">Graphic Designer</p>
+            <div class="team_social">
+              <a href="#" class="team_social-fb"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team_social-tw"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="team_social-pint"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="bottom">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+      </div>
+    </section>
+    <section id="partners">
+      <div class="container">
+        <img src="img/envato.png" alt="">
+        <img src="img/wordpress.png" alt="">
+        <img src="img/tuts-.png" alt="">
+        <img src="img/microlancer-copy.png" alt="">
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <p class="desc titledesc">Proin iaculis purus consequat sem cure.</p>
+        <form action="">
+          <div class="inputs">
+            <div class="left">
+              <input type="text" placeholder="your Name *" required>
+              <input type="email" placeholder="your e-mail *" required>
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="right"><textarea name="" id="" cols="30" rows="10" placeholder="Your message *" required></textarea></div>
+          </div>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copy">© Copyright 2017 <a href="http://webbyhub.ru" target="_blank">Webbyhub.ru</a></p>
+        <div class="footer_social">
+          <a href="#" class="footer-fb"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="footer-tw"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="footer-pint"><i class="fa fa-pinterest-p"></i></a>
+          <a href="#" class="footer-gg"><i class="fa fa-google-plus"></i></a>
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
